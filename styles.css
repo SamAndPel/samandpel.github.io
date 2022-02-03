@@ -1,0 +1,101 @@
+:root {
+    --colour-bg: #293241;
+    --colour-emph: #ee6c4d;
+    --colour-text: #e0fbfc;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    border: 0;
+    margin: 0;
+    background-color: var(--colour-bg);
+    color: var(--colour-text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* REGIONS ------------------------------------------------------- */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MAIN TITLE ---------------------------------------------------- */
+img {
+    margin: 10px;
+    border-radius: 10%;
+    border: 3px solid var(--colour-text);
+    transition: 0.3s ease;
+}
+
+img:hover {
+    border: 3px solid var(--colour-emph);
+}
+
+#name {
+    margin: 10px 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+/* SOCIAL LINKS -------------------------------------------------- */
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.sociallink {
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0 10px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    color: var(--colour-text);
+}
+
+.sociallink:hover {
+    color: var(--colour-emph);
+}
+
+
+/* If we're on a BIG screen */
+@media only screen and (min-width: 1000px) {
+    body, html {
+        padding: 100px 20px;
+    }
+
+    #wrapper {
+        flex-direction: row;
+    }
+
+    #name {
+        font-size: 4rem;
+    }
+
+    #information {
+        padding: 0 0 0 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .sociallink {
+        padding: 0 30px 0 0;
+    }
+}
