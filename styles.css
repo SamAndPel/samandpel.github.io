@@ -52,7 +52,7 @@ img:hover {
 
 #name {
     margin: 10px 0;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker", sans-serif;
     font-size: 1.7rem;
     font-weight: bold;
 }
