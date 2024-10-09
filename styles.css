@@ -21,7 +21,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: clamp(20px, 8vmin, 50px) 5px;
     border: 0;
     margin: 0;
     background-color: var(--colour-bg);
@@ -64,7 +64,7 @@ img {
     background-origin: padding-box, border-box;
     animation: gradient-pan 7s linear infinite;
 
-    height: 7rem;
+    height: clamp(5rem, 30vw, 10rem);
     aspect-ratio: 1;
 
 }
@@ -72,7 +72,8 @@ img {
 #name {
     margin: 5px;
     font-family: "Permanent Marker", sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1rem, 8vw, 2rem);
+    text-wrap: nowrap;
     font-weight: bold;
     background: linear-gradient(to right,
             var(--colour-purple),
@@ -97,7 +98,7 @@ img {
 
 .sociallink {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     padding: 0 10px;
     transition: 0.3s ease;
     border-radius: 5px;
@@ -109,7 +110,7 @@ img {
 }
 
 /* If we're on a BIG screen */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1028px) {
 
     body,
     html {
